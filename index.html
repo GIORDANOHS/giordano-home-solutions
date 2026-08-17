@@ -63,6 +63,15 @@
       white-space:nowrap;
     }
 
+    .header-actions{display:flex;align-items:center;gap:10px}
+    .save-contact-top{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:13px 18px;border:2px solid var(--blue);border-radius:5px;
+      color:var(--blue);background:#fff;font-size:15px;font-weight:800;
+      white-space:nowrap;
+    }
+    .save-contact-top:hover{background:#f4f8ff}
+
     /* HERO */
     .hero{
       border-bottom:1px solid #eef2f7;
@@ -320,6 +329,8 @@
         font-size:0;
         padding:10px 12px;
       }
+      .header-actions{gap:6px}
+      .save-contact-top{padding:10px 9px;font-size:11px}
       .phone-top::after{
         content:"Call";
         font-size:14px;
@@ -363,7 +374,10 @@
   <header>
     <div class="wrap header-inner">
       <img class="logo" src="logo.png" alt="Giordano Home Solutions, Inc. HVAC Installation and Service">
-      <a class="phone-top" href="tel:+15165780439">☎ 516-578-0439</a>
+      <div class="header-actions">
+        <a class="phone-top" href="tel:+15165780439">☎ 516-578-0439</a>
+        <a class="save-contact-top" href="giordano-home-solutions.vcf" download="Giordano-Home-Solutions.vcf">SAVE CONTACT</a>
+      </div>
     </div>
   </header>
 
@@ -428,12 +442,6 @@
             <h4>CALL OR TEXT</h4>
             <strong><a href="tel:+15165780439">516-578-0439</a></strong>
             <p>We're just a call<br>or text away.</p>
-            <a class="save-contact-btn"
-               href="giordano-home-solutions.vcf"
-               download="Giordano-Home-Solutions.vcf"
-               aria-label="Save Giordano Home Solutions to your contacts">
-              SAVE CONTACT
-            </a>
           </article>
 
           <article class="contact-card">
