@@ -254,6 +254,27 @@
       font-size:12px;
     }
 
+
+    .save-contact-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      margin-top:12px;
+      padding:8px 13px;
+      border:2px solid var(--blue);
+      border-radius:5px;
+      color:var(--blue);
+      background:#fff;
+      font-size:12px;
+      font-weight:800;
+      line-height:1;
+      transition:background .15s ease,color .15s ease;
+    }
+    .save-contact-btn:hover{
+      background:var(--blue);
+      color:#fff;
+    }
+
     /* TABLET */
     @media (max-width:900px){
       .header-inner{min-height:96px}
@@ -407,6 +428,12 @@
             <h4>CALL OR TEXT</h4>
             <strong><a href="tel:+15165780439">516-578-0439</a></strong>
             <p>We're just a call<br>or text away.</p>
+            <a class="save-contact-btn"
+               href="giordano-home-solutions.vcf"
+               download="Giordano-Home-Solutions.vcf"
+               aria-label="Save Giordano Home Solutions to your contacts">
+              SAVE CONTACT
+            </a>
           </article>
 
           <article class="contact-card">
